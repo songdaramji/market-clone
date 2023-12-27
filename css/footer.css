@@ -29,3 +29,19 @@ footer span {
 .footer-icons__img {
   width: 30px;
 }
+
+.footer-icons:hover .footer-icons__img {
+  animation: 2s icons-move;
+}
+
+@keyframes icons-move {
+  0% {
+    transform: translatey(0px);
+  }
+  30% {
+    transform: translatey(-10px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
